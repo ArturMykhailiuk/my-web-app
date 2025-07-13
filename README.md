@@ -31,12 +31,14 @@ my-web-app
 ### Installation
 
 1. Clone the repository:
+
    ```
    git clone <repository-url>
    cd my-web-app
    ```
 
 2. Install dependencies for the client:
+
    ```
    cd client
    npm install
@@ -51,6 +53,7 @@ my-web-app
 ### Running the Application
 
 - To run the client-side application:
+
   ```
   cd client
   npm start
