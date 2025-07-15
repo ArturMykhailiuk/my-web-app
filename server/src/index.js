@@ -1,16 +1,15 @@
 const express = require('express');
-const cors = require('cors');
-
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
-app.use(cors());
-app.use(express.json());
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello from AWS!', timestamp: new Date().toISOString() });
+});
 
-app.get('/api', (req, res) => {
-    res.send('Hello from the server!');
+app.get('/health', (req, res) => {
+  res.json({ status: 'healthy', port: PORT });
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
