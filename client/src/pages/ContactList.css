@@ -154,6 +154,30 @@
   cursor: not-allowed;
 }
 
+.btn-edit {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-edit:hover {
+  background: #4ecdc4;
+  transform: scale(1.1);
+  text-decoration: none;
+  color: inherit;
+}
+
 .contact-details {
   display: flex;
   flex-direction: column;

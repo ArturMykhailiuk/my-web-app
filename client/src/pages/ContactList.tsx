@@ -178,6 +178,13 @@ const ContactList: React.FC = () => {
                   <div className="contact-header">
                     <h3>{contact.name}</h3>
                     <div className="contact-actions">
+                      <Link
+                        to={`/edit-contact/${contact.id}`}
+                        className="btn-edit"
+                        title="Редагувати контакт"
+                      >
+                        ✏️
+                      </Link>
                       <button
                         onClick={() => handleDelete(contact.id, contact.name)}
                         className="btn-delete"
